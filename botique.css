@@ -1,0 +1,66 @@
+/* Reset básico */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: "Helvetica Neue", sans-serif; background: #f9f9f9; color: #111; }
+
+/* Top bar */
+.top-bar { background: #000; color: #fff; padding: 0.5rem 1rem; display: flex; justify-content: space-between; font-size: 0.8rem; }
+.top-bar button { background: none; border: none; color: #fff; cursor: pointer; }
+
+/* Header */
+.header { display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: rgba(0, 0, 0, 0.9); border-bottom: 1px solid #ddd; position: sticky; top: 0; }
+.logo { letter-spacing: 0.3em; font-weight: bold; text-decoration: none; color: #ffffff; }
+.nav a { margin: 0 0.5rem; text-decoration: none; color: #ffffff; font-size: 0.9rem; }
+.nav a:hover { opacity: 0.6; }
+.actions button { background: none; border: none; font-size: 1.2rem; cursor: pointer; }
+
+/* Hero */
+.hero { height: 70vh; background: url(img_boutique/loop_DT.mp4) center/cover; display: flex; align-items: flex-end; padding: 2rem; }
+.hero-content { background: rgba(255,255,255,0.7); padding: 1.5rem; border-radius: 1rem; max-width: 500px; }
+.hero h1 { font-size: 2.2rem; font-weight: 300; }
+.hero p { margin-top: 0.5rem; }
+.hero-buttons { margin-top: 1rem; display: flex; gap: 0.5rem; }
+.btn, .btn-outline { padding: 0.6rem 1.2rem; border-radius: 1rem; cursor: pointer; }
+.btn { background: #000; color: #fff; border: none; }
+.btn-outline { border: 1px solid #000; background: transparent; }
+
+/* CTA Strip */
+.cta-strip { background: #fff; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; padding: 1rem; display: flex; justify-content: space-between; }
+
+/* Collections */
+.collections { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; padding: 2rem; }
+.card { background: #fff; border-radius: 1rem; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-align: center; }
+.card-img { height: 350px; background-size: cover; background-position: center; }
+.card h3 { margin: 0.8rem 0 0.3rem; font-weight: 300; }
+.card p { font-size: 0.9rem; color: #555; margin-bottom: 1rem; }
+
+/* Newsletter */
+.newsletter { text-align: center; padding: 3rem 1rem; background: #f0f0f0; }
+.newsletter h2 { font-weight: 300; }
+.newsletter form { margin-top: 1rem; display: flex; justify-content: center; gap: 0.5rem; }
+.newsletter input { padding: 0.6rem; border-radius: 1rem; border: 1px solid #ccc; width: 250px; }
+.newsletter button { padding: 0.6rem 1.2rem; border-radius: 1rem; border: none; background: #000; color: #fff; cursor: pointer; }
+
+/* Footer */
+.footer { background: #000; color: #fff; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; padding: 2rem; }
+.footer a { color: #fff; text-decoration: none; font-size: 0.9rem; }
+.footer a:hover { opacity: 0.7; }
+/* Variación Hero con video */
+.hero-video-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-video-bg .hero-background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-video-bg .hero-content {
+  position: relative;
+  z-index: 1;
+}
